@@ -9,7 +9,7 @@ function Login({ onSignupClick, onLogin }) {
     e.preventDefault();
 
     // Kirim permintaan login ke server
-    axios.post('http://localhost:8081/login', { email, password })
+    axios.post('https://comp-quiz-git-main-kejuus-projects.vercel.app/login', { email, password })
       .then(res => {
         // Jika login berhasil, panggil fungsi onLogin dari props
         onLogin();

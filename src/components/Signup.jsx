@@ -29,7 +29,7 @@ function Signup({ onLoginClick }) {
         }
 
         // Mengirim data ke server jika semua kolom telah diisi
-        axios.post('http://localhost:8081/quizdua', values)
+        axios.post('https://comp-quiz-git-main-kejuus-projects.vercel.app/quizdua', values)
             .then(res => {
                 console.log("Register Success!!");
                 setErrors({}); // Menghapus pesan kesalahan jika berhasil
